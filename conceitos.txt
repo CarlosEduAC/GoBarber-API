@@ -1,0 +1,120 @@
+/**
+ * Persisência <-> Repositório <-> Rota
+ *
+ * SoC: Separation of Concerns ( Separação de preocupações)
+ * DTO: Data Transfer Object (Transferência de dado por Objeto)
+ *
+ * Rota: Receber requisição, chamar outro arquivo, devolver uma resposta
+ * Service: Recebimento das informações, Tratativa de Erros/Excessões, o acesso ao repositório
+ *
+ * DRY: Don't Repeat Yourself
+ * KISS: Keep It Simple & Stupid
+ *
+ */
+
+/**
+ * SOLID
+ *
+ * Single Responsability Principle
+ * O
+ * Liskov Substitution Principle
+ * I
+ * Dependency Inversion Principle
+ *
+ */
+
+/**
+ * Link Definições: https://www.notion.so/Repository-service-e-patterns-82419cceb11c4c4fbbc055ade7fb1ac5
+ */
+
+/**
+ * Migrations
+ *
+ * yarn typeorm migration:run
+ * yarn typeorm migration:revert
+ * yarn typeorm migration:show
+ * yarn typeorm migration:create -n CreateTabel
+ *
+ */
+
+ /**
+  * ForeighKeys
+  *
+  * onDelete:
+  *
+  * - RESTRICT > Não deixa ser deletado
+  * - SET NULL > Seta elemento para Nulo
+  * - CASCADE > Deletou elemento, deleta todos os lugares que é relacionado
+  *
+  * onUpdate:
+  *
+  * - RESTRICT > Não deixa ser alterado
+  * - SET NULL > Seta referencia de elemento para Nulo
+  * - CASCADE > Alterou elemento, altera todos em os lugares que é relacionado
+  *
+  */
+
+/**
+ * Relacionamentos
+ *
+ * Um para Um (OneToOne)
+ * Um para Muitos (OneToMany)
+ * Muitos para Muitos (ManyToMany)
+ *
+ */
+
+/**
+ * Estrutura Atual
+ *
+ * src
+ *  config
+ *  database
+ *  errors
+ *  middlewares
+ *  models
+ *  repositories
+ *  routes
+ *  services
+ *
+ * Domínio: Qual a área de conhecimento daquele módulo/arquivo
+ *
+ * DDD: Domain Driven Design (Metodologia)
+ * TDD: Teste Driven Development (Metodologia)
+ *
+ */
+
+/**
+ * Testes Automatizados
+ *
+ *  + Garante que nossa aplicação continue funcionando independente do
+ * número de novas funcionalidades e do número de devs no time.
+ *
+ * 1. Testes Unitários
+ *
+ *  + Testam funcionalidades especificas da nossa aplicação.
+ *
+ * 2. Testes de Integração
+ *
+ *  + Testam uma funcionade completa, passando por várias camadas da aplicação.
+ *
+ *   Ex: Rota -> Controller -> Serviço -> Repositório -> . . .
+ *
+ * 3. Testes E2E
+ *
+ *  + Testes que simulam a ação do usuário dentro da nossa aplicação.
+ *
+ * Ex: 1. Clique no input de e-mail
+ *     2. Preencha carlos@cardoso.com.br
+ *     3. Clique no input de senha
+ *     4. Preencha 123456
+ *     5. Clique no botão 'Logar'
+ *     6. Espero que a página tenha enviado o usuário para o dashboard
+ *
+ */
+
+/**
+ * TDD (Teste Driven Development)
+ *
+ *  + Iniciar o desenvolvimento de estórias pelos testes.
+ *
+ */
