@@ -118,3 +118,12 @@
  *  + Iniciar o desenvolvimento de estórias pelos testes.
  *
  */
+
+/**
+ * CDN (Content Delivery Network)
+ *
+ *  + Amazon S3
+ *  + Google Cloud Storage
+ *  + DO Spaces
+ *
+ */
